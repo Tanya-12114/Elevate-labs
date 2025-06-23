@@ -1,0 +1,146 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #050505;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#logo {
+    margin: 2px 15px;
+}
+
+#logo img {
+    width: 80px;;
+    height: 80px;
+    margin: 3px 1px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #00f2fe;
+}
+
+/* Hamburger menu icon */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #00f2fe;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+        border-radius: 6px;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    background: white;
+    color: #00f2fe;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #050505;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    color: #00f2fe;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #00f2fe;
+}

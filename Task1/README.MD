@@ -1,0 +1,1 @@
+This is a responsive landing page website built using HTML, CSS (Flexbox & Media Queries), and JavaScript for mobile menu interaction. It features a header with navigation, a hero section with a call-to-action, and a footer with social media links.
